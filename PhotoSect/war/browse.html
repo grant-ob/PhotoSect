@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<script src="cookie-functions.js" type="text/javascript"></script>
+	<script src="div-functions.js" type="text/javascript"></script>
+	<script src="browse.js" type="text/javascript"></script>
+	
+	
+	<title>PhotoSect - Image Sharing Application</title>
+
+</head>
+<body onload="loadFunction()">
+	<table cellpadding = "0" cellspacing="0" border="0" align="center" width="1000px" >
+		<tr>
+			<td><img src="banners/blank_banner.png"></td>
+		</tr>
+		<tr>
+			<td class="menu">
+				<table width="1000px" cellpadding="0" cellspacing="0" border="0" align="center">
+					<tr>
+						<td align="left">
+							<img src="banners/banner_logo.png" width="200" height="45"><img>
+						</td>
+						<td align="right" style="color: #ffffff;">
+							<div id="tabs">
+							</div>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td background="backgrounds/whitebg.png">
+										
+				<div background='comment-background.png' align="left" id="loggedInAs" style="display:none">
+				</div>
+				<table align=center width="1000px"><tr>
+					<td>
+					</div>
+					<!-- Div for myphotos section -->
+					<div align="left" id="myphotos" style="display:none"> 
+						<h1 style="text-align:center">My Photos</h1>
+						<div align="center" id="myphotoarea"></div>
+						<br>
+						
+						<h1 align="center">Upload new images here!</h1>
+
+						<form action="servlet/fileupload" method="post" target="Image Upload" enctype="multipart/form-data" id="form">
+	 
+						<table align="center">
+						<tbody>
+							<tr>
+								<td><input type="file" name="userfile1" id="userfile1" /></td>
+							</tr>
+							<tr>
+							<td>
+								<button type="button" onclick="popitup('popUpload.html')">Upload</button><input type="reset" value="Reset" />
+								<div id="uploadError"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						 
+						</form>
+					</div>					
+					<!-- Div for tags section -->
+					<div align="left" id="tags" style="display:none"> 
+						<h1 style="text-align:center">Images Sorted by Tag</h1>
+						<div align="center">Sort on tag:
+							<select id="tags-select" align="left" onchange="getSortedImages('tags', 'tags')">
+								<option selected>select tag:
+							</select>
+						</div>
+						<br>
+						<div align="center" id="tagsphotoarea"></div>
+					</div>	
+					<!-- Div for users section -->
+					<div align="left" id="users" style="display:none">
+						<h1 style="text-align:center">Images Sorted by User</h1>
+						<div align="center">Sort on user:
+							<select id="users-select" align="left" onchange="getSortedImages('users', 'usr-imgs')">
+								<option selected>select user:
+							</select>
+						</div>
+						<br>
+						<div align="center" id="usersphotoarea"></div>
+					</div>				
+					<!-- Div for views section -->				
+					<div align="left" id="views" style="display:none">
+						<h1 style="text-align:center">Images Sorted by View Count</h1>
+						<br>
+						<div align="center" id="viewsphotoarea"></div>
+					</div>				
+					<!-- Div for most comments section -->				
+					<div align="left" id="comments" style="display:none">
+						<h1 style="text-align:center">Images Sorted by Most Comments</h1>
+						<br>
+						<div align="center" id="commentsphotoarea"></div>
+					</div>				
+					</td>
+					</tr>
+				</table>
+			
+		</td>
+	</tr>
+	<tr>
+		<td><img src="backgrounds/footbg.png"></td>
+	</tr>
+	</table>
+</body>
+</html>
+			

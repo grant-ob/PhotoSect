@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<imgs>
+<i0> </i0>
+<i1> <nick>What nice cats</nick>
+<grant>cute kitties!</grant>
+</i1>
+<i2> <nick>I love Vancouver!</nick>
+</i2>
+<i3> </i3>
+<i4> <grant>a nice treat for a hot day!</grant>
+<nick>yum</nick>
+</i4>
+<i5> <grant>how was your trip to the zoo?</grant>
+</i5>
+<i6> <nick>Happy Halloween!</nick>
+</i6>
+<i7> <nick>Did you adopt him?</nick>
+<grant>nice dog! How old is he?</grant>
+</i7>
+
+<i9> <nick>Happy Birthday Grant!</nick>
+<grant>thanks Nick!</grant>
+</i9>
+<i10> <nick>Paris is a beautiful!</nick>
+<grant>^agreed</grant>
+</i10>
+<i11> </i11>
+
+<i13> </i13>
+<i14> <curtis123>I love cats!!</curtis123>
+</i14>
+<i15> </i15>
+</imgs>

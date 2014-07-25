@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<script src="cookie-functions.js" type="text/javascript"></script>
+	<script src="div-functions.js" type="text/javascript"></script>
+	
+	<script src="index.js" type="text/javascript"></script>
+	
+	<title>PhotoSect - Photo Sharing Application</title>
+
+</head>
+<body onload="loadFunction()">
+	<table cellpadding = "0" cellspacing="0" border="0" align="center" width="1000px" >
+		<tr>
+			<td><img src="banners/blank_banner.png"></td>
+		</tr> 
+		<tr>
+		<td class="menu">
+			<table width="1000px" cellpadding="0" cellspacing="0" border="0" align="center">
+				<tr>
+					<td align="left">
+						<img src="banners/banner_logo.png" id="banner" title="PhotoSect is awesome!" onclick="rotateBanner()" width="200" height="45"><img>
+					</td>
+					<td align="right" style="color: #ffffff;">
+						<div id="tabs">						
+						</div>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+	<td background="backgrounds/whitebg.png">
+			<table align=center>
+				<tr>
+					<td>	
+						<!-- Div for about section -->
+						<div id="about" style="display:block"> 
+							<h1 style="text-align:center">Welcome to the PhotoSect: <br> Photo Sharing Application!</h1>
+							<br>
+							<p>PhotoSect is an application in which users can view and comment on images 
+							that have been shared by themselves or other PhotoSect users!</p>
+							<p>Account users can add, delete, and tag their own images, and can comment on any image.
+							Also, account users can easily find other images by sorting on tags, username, view count, or comment count.</p>
+							<p>Non-account users can browse images and can perform sorting to find images, but cannot add, delete, 
+							comment on, or tag images.</p>
+							<p>PhotoSect was created by Nicholas Noel, Grant O'Brien, and Adam Sheppard.</p>
+						</div>	
+						<!-- Div for registration form -->
+						<div id="register" style="display:none">
+							<form id="register-form" action="javascript:void 1">							
+								<h1 style="text-align:center">Register Here!</h1>
+								<table>
+									</tr>
+										<td>
+											<table align="center">
+												<tr>
+													<td align="right">
+														<label for="r-uname">Username:</label>
+													</td>
+													<td align="left">
+														<input id="r-uname">
+													</td>
+												</tr>
+												<tr>
+													<td align="right">
+														<label>Password:</label>
+													</td>
+													<td align="left">
+														<input type="password" id="r-pwd">
+													</td>
+												</tr>
+												<tr>
+													<td align="right">
+														<label>Retype Password:</label>
+													</td>
+													<td>										
+														<input type="password" id="r-pwd2">
+													</td>
+												</tr>
+												<tr>
+													<td align="center" colspan="2">
+														<input type="submit" align="center" value="Create Account" onclick="createAccount()">
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td>
+										<div><p align="center"><b> Registration Tips!</b></p> 
+											<ul>
+												<li> Usernames must be at least 4 characters long and may not contain the characters
+													"&", "<", ">", "?" or "/" </li>
+												<li> Usernames may not begin with a number </li>
+												<li> Passwords should be at least 6 characters long </li>
+											<ul>
+										</div>
+									</td>
+								</tr>
+							</table>
+							</form>		
+						</div>				
+						<!-- Div for login form -->
+						<div id="login" style="display:none">
+							<form id="login-form" method="get" action="javascript:void 1">
+								<h1 style="text-align:center">Login Here!</h1>
+									<table align="center">
+										<tr>
+											<td align="right">
+												<label>Username:</label>
+											</td>
+											<td align="left">
+												<input type="uname" id="uname" value="">
+											</td>
+										</tr>
+										<tr>
+											<td align="right">
+												<label>Password:</label>
+											</td>
+											<td align="left">
+												<input type="password" id="pwd" value="">
+											</td>
+										</tr>
+										<tr>
+											<td align="center" colspan="2">
+												<input type="submit" align="center" value="Submit" onclick="login()">
+											</td>
+										</tr>
+									</table>
+									<div id="login-feedback"></div>
+							</form>
+						</div>
+						<!-- Div for successful registration -->
+						<div id="regSuccess" style="display:none">
+							<p class="regSuccess"> <b>Congrats! You're Registered! Click the link to log in!</b> <p>
+							<button align="center" onclick="openDiv('login')">Login!</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+	</td>
+	</tr>
+		
+	<tr>
+		<td background="backgrounds/whitebg.png">
+		<fieldset>
+			<legend><h1>New Photos!</h1></legend>
+			<div id="newphotos">
+			</div>
+		</fieldset>
+		</td>
+	</tr>
+	 <tr>
+				<td><img src="backgrounds/footbg.png"></td>
+	 </tr>
+	</table>
+</body>
+</html>
+			
