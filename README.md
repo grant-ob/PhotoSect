@@ -1,3 +1,4 @@
+![banner](ps_logo.png)
 # Welcome to PhotoSect 👋
 ![Version](https://img.shields.io/badge/version-1.00.00-blue.svg?cacheSeconds=2592000)
 
@@ -5,9 +6,12 @@
 
 ## Usage
 
+### Dependencies
+Ensure that you have a recent version of Java installed on your system. The application has been tested with java version 1.8.0_271.
+
 ### File Structure required
 ```
-<photoSect>
+<webapp>
 	PhotoSectServer.java
 	compileServer.sh
 	compileServer.bat
@@ -68,12 +72,12 @@
 ```
 	
 ### Steps to compile
-- In \<webapp\>, run compile.sh or compile.bat to create the class file for PhotoSectServer
-- In \<src\>, run compile.sh or compile.bat to create the class files for the servlets in the correct folder
+- In \<webapp\>, run compileServer.sh (linux) or compileServer.bat (windows) to create the class file for PhotoSectServer
+- In \<src\>, run compileServlets.sh or compileServlets.bat to create the class files for the servlets in the correct folder
 
 ### Steps to run
-- Run run.bat or run.sh in \<webapp\> to start the server
-- Visit http://localhost:4004/ OR run run.bat or run.sh in \<src\>
+- Run runServer.bat (windows) or runServer.sh (linux) in \<webapp\> to start the server
+- Visit http://localhost:4004/
 - While the application has been tested extensively and is working in Windows and Linux, we recommend using it in a Windows environment
 - To ensure best viewing experience, use the latest stable version of Firefox or Chrome to view the application 
 
