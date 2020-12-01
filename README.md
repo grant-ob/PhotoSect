@@ -68,12 +68,12 @@
 ```
 	
 ### Steps to compile
-- In <webapp>, run compile.sh or compile.bat to create the class file for PhotoSectServer
-- In <src>, run compile.sh or compile.bat to create the class files for the servlets in the correct folder
+- In \<webapp\>, run compile.sh or compile.bat to create the class file for PhotoSectServer
+- In \<src\>, run compile.sh or compile.bat to create the class files for the servlets in the correct folder
 
 ### Steps to run
-- Run run.bat or run.sh in <webapp> to start the server
-- Visit http://localhost:4004/ OR run run.bat or run.sh in <src>
+- Run run.bat or run.sh in \<webapp\> to start the server
+- Visit http://localhost:4004/ OR run run.bat or run.sh in \<src\>
 - While the application has been tested extensively and is working in Windows and Linux, we recommend using it in a Windows environment
 - To ensure best viewing experience, use the latest stable version of Firefox or Chrome to view the application 
 
@@ -123,8 +123,6 @@
   - Most views
   - Most comments
 - These can be accesed through the browse button on the homepage
-	
-# Enjoy! 😎
 
 ## Authors
 
@@ -136,6 +134,7 @@
 
 Give a ⭐️ if this project helped you!
 
+## Enjoy! 😎
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
